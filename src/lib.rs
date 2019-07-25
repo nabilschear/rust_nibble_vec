@@ -1,4 +1,10 @@
+#![no_std]
+#[macro_use]
+extern crate sgx_tstd as std;
+use std::prelude::v1::*;
+
 #[cfg(test)]
+
 mod test;
 
 use std::convert::{From, Into};

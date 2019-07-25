@@ -16,3 +16,6 @@ categories = ["data-structures"]
 
 [badges]
 travis-ci = { repository = "michaelsproul/rust_nibble_vec" }
+
+[dependencies]
+sgx_tstd = "1.0.8"

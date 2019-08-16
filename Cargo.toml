@@ -17,5 +17,9 @@ categories = ["data-structures"]
 [badges]
 travis-ci = { repository = "michaelsproul/rust_nibble_vec" }
 
-[target.'cfg(target_env = "sgx")'.dependencies]
-sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", package="sgx_tstd" }
+[features]
+default = []
+sgx = ["sgx_tstd"]
+
+[dependencies]
+sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", package="sgx_tstd", optional=true  }
